@@ -4,8 +4,8 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* centraliza verticalmente */
-  align-items: center;       /* centraliza horizontalmente */
+  justify-content: center;   /* Centraliza verticalmente */
+  align-items: center;       /* Centraliza horizontalmente */
   background-color: #f9f9f9;
 }
 
@@ -16,7 +16,7 @@ body {
 
 .container {
   border: 2px solid black;
-  box-shadow: 3px 3px 5px #999;
+  box-shadow: 3px 3px 5px #999; /* Sombra para dar profundidade */
   padding: 20px;
   max-width: 400px;
   text-align: center;
@@ -26,26 +26,24 @@ body {
 .menu {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 10px; /* Espaço entre os botões */
   margin-bottom: 20px;
 }
 
 .menu button {
-  display: inline-block;
   border: 2px solid black;
   padding: 10px 16px;
-  text-decoration: none;
-  color: black;
   background-color: white;
+  color: black;
   font-weight: bold;
   border-radius: 4px;
-  transition: background-color 0.2s, transform 0.1s;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.2s, transform 0.1s; /* Animações suaves */
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no botão */
 }
 
 .menu button:hover {
   background-color: #f0f0f0;
-  transform: translateY(-2px);
+  transform: translateY(-2px); /* Efeito de "subir" ao passar o mouse */
 }
 
 .conteudo {

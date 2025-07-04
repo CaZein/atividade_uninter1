@@ -1,10 +1,10 @@
 function trocarConteudo(conteudoID) {
-  event.preventDefault(); // impede comportamento padrão
+  event.preventDefault(); // Impede o comportamento padrão do link ou botão
 
-  let conteudoHTML = '';
+  let conteudoHTML = ''; // Variável que vai guardar o conteúdo a ser exibido
 
   switch (conteudoID) {
-    case 'conteudo1':
+    case 'conteudo1': // Currículo
       conteudoHTML = `
         <h2>Curriculum</h2>
         <p><strong>Nome:</strong> Caio S. R. Zein</p>
@@ -21,7 +21,7 @@ function trocarConteudo(conteudoID) {
       `;
       break;
 
-    case 'conteudo2':
+    case 'conteudo2': // Sobre mim
       conteudoHTML = `
         <h2>Sobre Mim</h2>
         <p>Sou Caio Zein, estudante de Análise e Desenvolvimento de Sistemas, apaixonado por tecnologia e inovação.</p>
@@ -31,7 +31,7 @@ function trocarConteudo(conteudoID) {
       `;
       break;
 
-    case 'conteudo3':
+    case 'conteudo3': // Perfil
       conteudoHTML = `
         <h2>Perfil</h2>
         <img src="./assets/profile.jpeg" alt="Foto de perfil" style="
@@ -55,7 +55,7 @@ function trocarConteudo(conteudoID) {
       `;
       break;
 
-    case 'conteudo4':
+    case 'conteudo4': // Página inicial
       conteudoHTML = `
         <h2>Bem-vindo!</h2>
         <p>Este é o portfólio de <strong>Caio Zein</strong>.</p>
@@ -65,8 +65,9 @@ function trocarConteudo(conteudoID) {
       break;
 
     default:
-      conteudoHTML = `<p>© 2025 Caio Zein. Todos os direitos reservados.</p>`;
+      conteudoHTML = `<p>© 2025 Caio Zein. Todos os direitos reservados.</p>`; // Caso não encontre o conteúdo
   }
 
+  // Substitui o conteúdo da div com o ID "conteudo"
   document.getElementById('conteudo').innerHTML = conteudoHTML;
 }
